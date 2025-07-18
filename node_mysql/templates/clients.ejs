@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client List</title>
+</head>
+<body>
+    <h2>List of Clients</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Client No</th>
+                <th>First Name</th>
+                <th>Initial Name</th>
+                <th>Tel No</th>
+                <th>Pref Type</th>
+                <th>Max Rent</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% clients.forEach(client => { %>
+            <tr>
+                <td><%= client.clientNo %></td>
+                <td><%= client.fName %></td>
+                <td><%= client.Iname %></td>
+                <td><%= client.telNo %></td>
+                <td><%= client.prefType %></td>
+                <td><%= client.maxRent %></td>
+                <td><%= client.Email %></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>
